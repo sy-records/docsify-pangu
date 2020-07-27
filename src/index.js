@@ -11,7 +11,11 @@ const install = function(hook) {
   });
 
   hook.doneEach(_ => {
-    pangu.spacingElementByClassName('content');
+    try {
+      pangu.spacingElementByClassName('content');
+    } catch (e) {
+
+    }
   });
 };
 
