@@ -5,3 +5,11 @@
 [![](https://img.shields.io/npm/l/docsify-pangu)](https://github.com/sy-records/docsify-pangu/blob/master/LICENSE)
 
 A docsify plugin for automatically adding spaces.
+
+一个 docsify 插件：使用 [pangu.js](https://github.com/vinta/pangu.js) 给网页上的中文和英文、数字、符号之间添加空格。
+
+# Usage
+
+```html
+<script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
+```
