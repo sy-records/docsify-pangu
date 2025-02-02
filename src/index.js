@@ -5,18 +5,17 @@ function appendScript() {
   document.body.appendChild(script);
 }
 
-const install = function(hook) {
-  hook.init(_ => {
+function panguPlugin(hook) {
+  hook.init(() => {
     appendScript();
   });
 
-  hook.doneEach(_ => {
-    try {
-      pangu.spacingElementByClassName('content');
-    } catch (e) {
-
+  hook.doneEach(() => {
+    if (window.pangu) {
+      window.pangu.spacingElementByClassName('markdown-section');
     }
   });
-};
+}
 
-$docsify.plugins = [].concat(install, $docsify.plugins);
+window.$docsify = window.$docsify || {};
+$docsify.plugins = [...($docsify.plugins || []), panguPlugin];
