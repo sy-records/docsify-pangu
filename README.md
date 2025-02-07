@@ -11,5 +11,5 @@ A docsify plugin for automatically adding spaces.
 # Usage
 
 ```html
-<script src="//cdn.jsdelivr.net/npm/docsify-pangu/lib/pangu.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/docsify-pangu/dist/pangu.min.js"></script>
 ```

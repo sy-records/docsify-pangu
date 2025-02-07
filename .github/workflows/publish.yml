@@ -1,0 +1,14 @@
+name: Publish NPM Package to GitHub Packages and npm
+
+on:
+  push:
+    branches:
+      - ci
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  publish:
+    if: github.repository_owner == 'sy-records'
+    uses: sy-records/.github/.github/workflows/npm-publish.yml@main
+    secrets: inherit
