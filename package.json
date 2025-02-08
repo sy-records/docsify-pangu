@@ -1,6 +1,6 @@
 {
   "name": "@sy-records/docsify-pangu",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A docsify plugin for automatically adding spaces.",
   "main": "dist/index.js",
   "repository": {
